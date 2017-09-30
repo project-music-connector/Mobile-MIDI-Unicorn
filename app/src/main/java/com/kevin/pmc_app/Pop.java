@@ -1,7 +1,6 @@
 package com.kevin.pmc_app;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.view.View;
@@ -25,7 +24,7 @@ public class Pop extends Activity {
 
         getWindow().setLayout((int)(width * 0.7), (int)(height * 0.7));
 
-        Button b = (Button) findViewById(R.id.button1);
+        Button b = (Button) findViewById(R.id.btn_select_file);
         b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

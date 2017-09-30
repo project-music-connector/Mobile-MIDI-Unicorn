@@ -10,9 +10,11 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        final Intent popUp = new Intent(MainActivity.this, Pop.class);
+        Intent popUp = new Intent(MainActivity.this, Pop.class);
+        Intent drawScreen = new Intent(MainActivity.this, DrawScreen.class);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        startActivity(drawScreen);
         startActivity(popUp);
 
     }
