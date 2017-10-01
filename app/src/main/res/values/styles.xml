@@ -10,7 +10,11 @@
 
     <style name="AppTheme.CustomTheme" >
         <item name ="android:windowBackground">@color/colorPrimaryDark</item>
-        <item name ="android:windowCloseOnTouchOutside">true</item>
+    </style>
+
+    <style name="AppTheme.PaletteTheme" >
+        <item name ="android:windowIsTranslucent">true</item>
+        <item name ="android:windowBackground">@color/white</item>
     </style>
 
 </resources>

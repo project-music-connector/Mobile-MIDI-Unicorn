@@ -16,14 +16,13 @@ public class DrawScreen extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.drawing_screen);
 
-        Button b = (Button) findViewById(R.id.btn_palatte);
+        Button b = (Button) findViewById(R.id.btn_palette); // button to toggle palette
 
         b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(DrawScreen.this, Palatte.class));
+                startActivity(new Intent(DrawScreen.this, Palette.class));
             }
         });
-
     }
 }

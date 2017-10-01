@@ -31,6 +31,7 @@ public class Pop extends Activity {
                 // Load a file
             }
         });
+        this.setFinishOnTouchOutside(true);
     }
 
 }
