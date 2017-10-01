@@ -8,6 +8,7 @@ import android.widget.Button;
 
 /**
  * Created by kchoi on 9/29/2017.
+ * Screen for hand-drawing picture
  */
 
 public class DrawScreen extends Activity {
