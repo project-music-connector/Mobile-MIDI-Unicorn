@@ -12,13 +12,16 @@ import android.widget.Button;
  */
 
 public class DrawScreen extends Activity {
+    private DrawView drawView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.drawing_screen);
 
         Button b = (Button) findViewById(R.id.btn_palette); // button to toggle palette
-
+        drawView = (DrawView) findViewById(R.id.drawing);
+        drawView.setThickness(10);
         b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

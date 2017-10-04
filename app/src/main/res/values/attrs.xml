@@ -1,0 +1,6 @@
+<resources>
+    <declare-styleable name="DrawView">
+        <attr name="thickness"> 10dp </attr>
+        <attr name="color" value = "#000000" />
+    </declare-styleable>
+</resources>

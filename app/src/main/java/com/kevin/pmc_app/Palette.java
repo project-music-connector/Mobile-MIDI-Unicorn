@@ -5,6 +5,7 @@ import android.graphics.Point;
 import android.os.Bundle;
 import android.view.Display;
 import android.view.WindowManager;
+import android.widget.SeekBar;
 
 /**
  * Created by kchoi on 9/29/2017.
@@ -12,6 +13,7 @@ import android.view.WindowManager;
  */
 
 public class Palette extends Activity {
+    private SeekBar thicknessBar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,6 +24,10 @@ public class Palette extends Activity {
         display.getSize(size);
         int width = size.x; // get screen dimensions
         int height = size.y;
+
+        thicknessBar = (SeekBar) findViewById(R.id.thickness);
+        //TODO: add an OnSeekBarChangeListener
+
 
         WindowManager.LayoutParams params = getWindow().getAttributes();
         params.x = 0; // set window coordinate
