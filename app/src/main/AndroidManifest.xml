@@ -20,6 +20,10 @@
         <activity android:name=".Pop"
             android:theme="@style/AppTheme.CustomTheme"
             ></activity>
+        <activity android:name=".DrawScreen"></activity>
+        <activity android:name=".Palette"
+            android:theme="@style/AppTheme.PaletteTheme"
+            ></activity>
     </application>
 
 </manifest>

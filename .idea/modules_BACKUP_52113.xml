@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+<<<<<<< HEAD
+      <module fileurl="file://$PROJECT_DIR$/Mobile-MIDI-Unicorn.iml" filepath="$PROJECT_DIR$/Mobile-MIDI-Unicorn.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/PMC-App.iml" filepath="$PROJECT_DIR$/PMC-App.iml" />
+>>>>>>> 88b6b3c268264d3c263d561e80706990e36d0ce6
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+    </modules>
+  </component>
+</project>

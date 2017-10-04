@@ -3,22 +3,19 @@ package com.kevin.pmc_app;
 import android.app.Activity;
 import android.graphics.Point;
 import android.os.Bundle;
-import android.util.DisplayMetrics;
 import android.view.Display;
-import android.view.View;
 import android.view.WindowManager;
-import android.widget.Button;
 
 /**
- * Created by Kevin on 9/29/2017.
- * Opening window
+ * Created by kchoi on 9/29/2017.
+ * Small pop-up window for choosing brush sizes and color
  */
 
-public class Pop extends Activity {
+public class Palette extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.popwindow);
+        setContentView(R.layout.palette);
 
         Display display = getWindowManager().getDefaultDisplay();
         Point size = new Point();
@@ -34,14 +31,6 @@ public class Pop extends Activity {
         params.dimAmount = 0.75f;
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_DIM_BEHIND);
         this.getWindow().setAttributes(params); // re-sizes window and dims other activities
-        Button b = (Button) findViewById(R.id.btn_select_file);
-        b.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                //  TODO: Load a file
-            }
-        });
-        this.setFinishOnTouchOutside(true); // close file when outside is touched
+        this.setFinishOnTouchOutside(true); // closes activity when touched outside
     }
-
 }
