@@ -11,13 +11,13 @@ import android.widget.Button;
  * Screen for hand-drawing picture
  */
 
-public class DrawScreen extends Activity {
+public class DrawActivity extends Activity {
     private DrawView drawView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.drawing_screen);
+        setContentView(R.layout.activity_draw);
 
         Button b = (Button) findViewById(R.id.btn_palette); // button to toggle palette
         drawView = (DrawView) findViewById(R.id.drawing);
@@ -25,7 +25,7 @@ public class DrawScreen extends Activity {
         b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(DrawScreen.this, Palette.class));
+                startActivity(new Intent(DrawActivity.this, Palette.class));
             }
         });
     }
