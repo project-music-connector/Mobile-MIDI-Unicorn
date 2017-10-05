@@ -19,13 +19,30 @@ public class DrawActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_draw);
 
-        Button b = (Button) findViewById(R.id.btn_palette); // button to toggle palette
+        Button btn_palette = (Button) findViewById(R.id.btn_palette); // button to toggle palette
+        Button btn_clear = (Button) findViewById(R.id.btn_clear); // button to clear DrawView
+        Button btn_undo = (Button) findViewById(R.id.btn_undo); // button to undo last stroke
+
         drawView = (DrawView) findViewById(R.id.drawing);
         drawView.setThickness(10);
-        b.setOnClickListener(new View.OnClickListener() {
+        btn_palette.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(DrawActivity.this, Palette.class));
+            }
+        });
+
+        btn_clear.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                drawView.clear();
+            }
+        });
+
+        btn_undo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                drawView.undo();
             }
         });
     }
